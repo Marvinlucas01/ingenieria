@@ -1,0 +1,1 @@
+console.log('IGPH Bright Premium Version Loaded');
