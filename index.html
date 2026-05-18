@@ -31,7 +31,7 @@ body{
     overflow-x:hidden;
 }
 
-/* ===== HERO ===== */
+/* HERO */
 
 .hero{
     min-height:100vh;
@@ -52,9 +52,7 @@ body{
 }
 
 .hero::before{
-
     content:'';
-
     position:absolute;
 
     width:850px;
@@ -72,7 +70,7 @@ body{
     z-index:0;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 
 header{
     position:fixed;
@@ -120,8 +118,6 @@ nav a:hover{
     color:#d4a017;
 }
 
-/* ===== BUTTON HEADER ===== */
-
 .btn-top{
     border:2px solid #d4a017;
     padding:14px 28px;
@@ -142,11 +138,10 @@ nav a:hover{
 .btn-top:hover{
     background:#d4a017;
     color:black;
-
     box-shadow:0 10px 30px rgba(212,160,23,0.35);
 }
 
-/* ===== HERO CONTENT ===== */
+/* HERO CONTENT */
 
 .hero-content{
     min-height:100vh;
@@ -163,11 +158,10 @@ nav a:hover{
     z-index:5;
 }
 
-/* ===== LOGO ===== */
+/* LOGO */
 
 .logo-big{
     width:45%;
-
     display:flex;
     justify-content:center;
     align-items:center;
@@ -177,16 +171,9 @@ nav a:hover{
     width:100%;
     max-width:650px;
 
-    filter:
-    drop-shadow(0 0 45px rgba(212,160,23,0.28));
+    filter:drop-shadow(0 0 45px rgba(212,160,23,0.28));
 
     animation:float 6s ease-in-out infinite;
-
-    transition:0.4s;
-}
-
-.logo-big img:hover{
-    transform:scale(1.02);
 }
 
 @keyframes float{
@@ -205,7 +192,7 @@ nav a:hover{
 
 }
 
-/* ===== TEXT ===== */
+/* TEXT */
 
 .text-side{
     width:50%;
@@ -218,12 +205,9 @@ nav a:hover{
     letter-spacing:1px;
     text-transform:uppercase;
     line-height:1.8;
-
-    text-shadow:0 0 20px rgba(255,255,255,0.25);
 }
 
 .description{
-
     margin-top:30px;
 
     font-size:18px;
@@ -234,11 +218,10 @@ nav a:hover{
     max-width:720px;
 }
 
-/* ===== BUTTONS ===== */
+/* BUTTONS */
 
 .buttons{
     margin-top:48px;
-
     display:flex;
     gap:22px;
 }
@@ -260,9 +243,7 @@ nav a:hover{
 }
 
 .btn-gold:hover{
-
     transform:translateY(-5px);
-
     box-shadow:0 12px 30px rgba(212,160,23,0.35);
 }
 
@@ -288,59 +269,46 @@ nav a:hover{
     background:rgba(212,160,23,0.10);
 }
 
-/* ===== ABOUT ===== */
+/* ABOUT */
 
 .about-section{
-
     padding:120px 20px;
-
     background:#151515;
 }
 
 .about-container{
-
     max-width:1100px;
     margin:auto;
     text-align:center;
 }
 
 .about-container h2{
-
     font-size:42px;
     color:#d4a017;
     margin-bottom:20px;
 }
 
 .about-container p{
-
     color:#d6d6d6;
-
     line-height:2;
-
     font-size:17px;
-
     max-width:950px;
-
     margin:auto;
 }
 
-/* ===== GOLD LINE ===== */
+/* GOLD LINE */
 
 .gold-line{
-
     width:120px;
     height:2px;
-
     background:#d4a017;
-
     margin:30px auto 50px;
 }
 
-/* ===== SERVICES ===== */
+/* SERVICES */
 
 .services{
     width:94%;
-
     margin:auto;
     margin-top:-80px;
 
@@ -368,7 +336,6 @@ nav a:hover{
 }
 
 .service{
-
     padding:45px 22px;
 
     border-right:1px solid rgba(212,160,23,0.08);
@@ -386,17 +353,13 @@ nav a:hover{
     transform:translateY(0);
 }
 
-.service:last-child{
-    border-right:none;
+.service:hover{
+    background:#1a1a1a;
+    transform:translateY(-8px);
 }
 
-.service:hover{
-
-    background:#1a1a1a;
-
-    transform:translateY(-8px);
-
-    box-shadow:0 20px 40px rgba(0,0,0,0.35);
+.service:last-child{
+    border-right:none;
 }
 
 .service-icon{
@@ -405,15 +368,11 @@ nav a:hover{
 }
 
 .service h3{
-
     margin-bottom:18px;
-
     font-size:16px;
     font-weight:800;
-
     letter-spacing:1px;
     text-transform:uppercase;
-
     color:#d4a017;
 }
 
@@ -424,53 +383,40 @@ nav a:hover{
 }
 
 .service ul li{
-
     color:#d0d0d0;
-
     font-size:13px;
     line-height:1.7;
-
     margin-bottom:8px;
-
-    position:relative;
-
     padding-left:16px;
+    position:relative;
 }
 
 .service ul li::before{
-
     content:'•';
-
     color:#d4a017;
-
     position:absolute;
     left:0;
 }
 
-/* ===== ENFOQUE ===== */
+/* ENFOQUE */
 
 .focus-section{
-
     padding:120px 20px;
-
     background:#101010;
 }
 
 .focus-container{
-
     max-width:1200px;
     margin:auto;
     text-align:center;
 }
 
 .focus-container h2{
-
     font-size:42px;
     color:#d4a017;
 }
 
 .focus-grid{
-
     margin-top:60px;
 
     display:grid;
@@ -480,7 +426,6 @@ nav a:hover{
 }
 
 .focus-box{
-
     background:#181818;
 
     padding:45px 35px;
@@ -493,84 +438,158 @@ nav a:hover{
 }
 
 .focus-box:hover{
-
     transform:translateY(-10px);
-
     background:#1f1f1f;
-
-    box-shadow:0 20px 40px rgba(0,0,0,0.35);
 }
 
 .focus-box h3{
-
     color:#d4a017;
-
     margin-bottom:18px;
-
     font-size:20px;
 }
 
 .focus-box p{
-
     color:#d0d0d0;
-
     line-height:1.9;
-
     font-size:15px;
 }
 
-/* ===== FOOTER ===== */
+/* FORMULARIO */
+
+.form-section{
+    padding:120px 20px;
+    background:#151515;
+}
+
+.form-container{
+    max-width:850px;
+    margin:auto;
+
+    background:#1a1a1a;
+
+    padding:60px;
+
+    border-radius:24px;
+
+    border:1px solid rgba(212,160,23,0.12);
+
+    box-shadow:0 25px 60px rgba(0,0,0,0.35);
+}
+
+.form-container h2{
+    text-align:center;
+    color:#d4a017;
+    font-size:40px;
+}
+
+.form-container p{
+    text-align:center;
+    color:#d0d0d0;
+    margin-top:20px;
+    margin-bottom:45px;
+    line-height:1.8;
+}
+
+.form-group{
+    margin-bottom:25px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:12px;
+    color:#d4a017;
+    font-weight:700;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#111;
+
+    color:white;
+
+    font-size:15px;
+
+    outline:none;
+
+    border:1px solid rgba(212,160,23,0.15);
+}
+
+.form-group textarea{
+    min-height:140px;
+    resize:none;
+}
+
+.submit-btn{
+    width:100%;
+
+    background:#d4a017;
+
+    color:black;
+
+    border:none;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    font-size:15px;
+    font-weight:800;
+
+    cursor:pointer;
+
+    transition:0.35s;
+}
+
+.submit-btn:hover{
+    transform:translateY(-4px);
+}
+
+/* FOOTER */
 
 .footer{
-
     padding:90px 20px;
-
     text-align:center;
-
     background:#0c0c0c;
-
     border-top:1px solid rgba(212,160,23,0.10);
 }
 
 .footer h2{
-
     color:#d4a017;
-
     margin-bottom:20px;
-
     font-size:34px;
 }
 
 .footer p{
-
     color:#d8d8d8;
-
     line-height:1.9;
 }
 
 .footer-line{
-
     width:120px;
     height:2px;
-
     background:#d4a017;
-
     margin:30px auto;
 }
 
 .copy{
-
     margin-top:28px;
-
     font-size:13px;
-
     opacity:0.7;
 }
 
-/* ===== WHATSAPP ===== */
+/* WHATSAPP */
 
 .whatsapp-float{
-
     position:fixed;
 
     bottom:28px;
@@ -603,7 +622,7 @@ nav a:hover{
     transform:scale(1.1);
 }
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 
 @media(max-width:1200px){
 
@@ -666,6 +685,10 @@ header{
     grid-template-columns:1fr;
 }
 
+.form-container{
+    padding:35px 25px;
+}
+
 .whatsapp-float{
     width:58px;
     height:58px;
@@ -679,7 +702,7 @@ header{
 
 <body>
 
-<a href="https://wa.me/50760000000?text=Hola,%20me%20interesa%20una%20consultoría%20para%20administración%20de%20PH"
+<a href="https://wa.me/50764288858?text=Hola,%20me%20interesa%20una%20consultoría%20para%20administración%20de%20PH"
 class="whatsapp-float"
 target="_blank">
 💬
@@ -694,16 +717,15 @@ IGPH PANAMÁ
 </div>
 
 <nav>
-
 <a href="#inicio">INICIO</a>
 <a href="#nosotros">NOSOTROS</a>
 <a href="#servicios">SERVICIOS</a>
 <a href="#enfoque">ENFOQUE</a>
+<a href="#formulario">PROPUESTA</a>
 <a href="#contacto">CONTACTO</a>
-
 </nav>
 
-<a href="#contacto" class="btn-top">
+<a href="#formulario" class="btn-top">
 SOLICITAR PROPUESTA
 </a>
 
@@ -712,9 +734,7 @@ SOLICITAR PROPUESTA
 <div class="hero-content">
 
 <div class="logo-big">
-
 <img src="logo.png" alt="IGPH Panamá">
-
 </div>
 
 <div class="text-side">
@@ -735,12 +755,8 @@ Especialistas en administración integral de PH, análisis de riesgos, reglament
 
 <div class="buttons">
 
-<a href="https://wa.me/50760000000?text=Hola,%20me%20interesa%20una%20consultoría%20para%20administración%20de%20PH"
-class="btn-gold"
-target="_blank">
-
-SOLICITAR CONSULTORÍA
-
+<a href="#formulario" class="btn-gold">
+SOLICITAR PROPUESTA
 </a>
 
 <a href="#nosotros" class="btn-dark">
@@ -901,6 +917,75 @@ La correcta administración incrementa el valor y la reputación de cada propied
 
 </section>
 
+<section id="formulario" class="form-section">
+
+<div class="form-container">
+
+<h2>Solicitar Propuesta</h2>
+
+<div class="gold-line"></div>
+
+<p>
+Complete el siguiente formulario y nuestro equipo le contactará para preparar una propuesta personalizada para su propiedad horizontal.
+</p>
+
+<form>
+
+<div class="form-group">
+<label>Nombre del Edificio o PH</label>
+<input type="text" placeholder="Ejemplo: PH Costa Bella">
+</div>
+
+<div class="form-group">
+<label>Nombre del Contacto</label>
+<input type="text" placeholder="Nombre completo">
+</div>
+
+<div class="form-group">
+<label>Número de Contacto</label>
+<input type="tel" placeholder="+507">
+</div>
+
+<div class="form-group">
+<label>Correo Electrónico</label>
+<input type="email" placeholder="correo@ejemplo.com">
+</div>
+
+<div class="form-group">
+<label>Cantidad de Apartamentos</label>
+<input type="number" placeholder="Ejemplo: 56">
+</div>
+
+<div class="form-group">
+<label>Servicios Requeridos</label>
+
+<select>
+<option>Administración Integral</option>
+<option>Reglamento PH</option>
+<option>Auditoría Operativa</option>
+<option>Mantenimiento</option>
+<option>Consultoría Estratégica</option>
+</select>
+
+</div>
+
+<div class="form-group">
+<label>Detalles Adicionales</label>
+
+<textarea placeholder="Escriba detalles importantes sobre la propiedad o necesidades específicas"></textarea>
+
+</div>
+
+<button type="submit" class="submit-btn">
+ENVIAR SOLICITUD
+</button>
+
+</form>
+
+</div>
+
+</section>
+
 <section class="footer" id="contacto">
 
 <h2>IGPH Panamá</h2>
@@ -915,12 +1000,12 @@ Panamá, República de Panamá
 <br>
 
 <p>
-📞 +507 XXXX-XXXX<br>
+📞 +507 6428-8858<br>
 ✉ contacto@igphpanama.com
 </p>
 
 <div class="copy">
-© 2026 IGPH Panamá — Luxury Dark Premium
+© 2026 IGPH Panamá™ · Todos los derechos reservados
 </div>
 
 </section>
@@ -948,4 +1033,5 @@ window.addEventListener('scroll', () => {
 </script>
 
 </body>
+</html>
 </html>
