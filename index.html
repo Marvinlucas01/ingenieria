@@ -5,7 +5,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>IGPH Panamá | Luxury Dark Premium</title>
+<title>Administración de Propiedad Horizontal en Panamá | IGPH Panamá</title>
+
+<meta name="description" content="IGPH Panamá ofrece administración profesional de Propiedad Horizontal en Panamá, administración PH, gestión técnica, financiera y operativa, reglamentos de uso, análisis de riesgos y mantenimiento preventivo para edificios y comunidades.">
+
+<meta name="keywords" content="administración de propiedad horizontal Panamá, administración PH Panamá, administrador de PH Panamá, administración de edificios Panamá, reglamento de uso PH, análisis de riesgos propiedad horizontal, mantenimiento preventivo PH, IGPH Panamá">
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="IGPH Panamá">
+
+<link rel="canonical" href="https://igphpanama.com/">
+
+<meta property="og:title" content="Administración de Propiedad Horizontal en Panamá | IGPH Panamá">
+<meta property="og:description" content="Administración profesional de PH en Panamá. Gestión técnica, financiera y operativa para edificios, residenciales y comunidades.">
+<meta property="og:url" content="https://igphpanama.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IGPH Panamá">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,688 +29,7 @@
 
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Montserrat',sans-serif;
-    background:#111111;
-    color:white;
-    overflow-x:hidden;
-}
-
-/* HERO */
-
-.hero{
-    min-height:100vh;
-
-    background:
-    linear-gradient(
-    120deg,
-    rgba(0,0,0,0.84) 10%,
-    rgba(0,0,0,0.76) 45%,
-    rgba(0,0,0,0.92) 100%
-    ),
-
-    url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=2070&auto=format&fit=crop')
-    center/cover no-repeat;
-
-    position:relative;
-    overflow:hidden;
-}
-
-.hero::before{
-    content:'';
-    position:absolute;
-
-    width:850px;
-    height:850px;
-
-    background:
-    radial-gradient(
-    rgba(212,160,23,0.18),
-    transparent 70%
-    );
-
-    top:-300px;
-    right:-250px;
-
-    z-index:0;
-}
-
-/* HEADER */
-
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:28px 80px;
-
-    z-index:999;
-
-    backdrop-filter:blur(14px);
-
-    background:rgba(0,0,0,0.45);
-
-    border-bottom:1px solid rgba(212,160,23,0.12);
-}
-
-.logo-nav{
-    font-weight:800;
-    letter-spacing:2px;
-    color:#d4a017;
-    font-size:20px;
-}
-
-nav{
-    display:flex;
-    gap:42px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    font-size:13px;
-    font-weight:700;
-    letter-spacing:1px;
-    transition:0.3s;
-}
-
-nav a:hover{
-    color:#d4a017;
-}
-
-.btn-top{
-    border:2px solid #d4a017;
-    padding:14px 28px;
-    border-radius:8px;
-
-    color:#d4a017;
-    text-decoration:none;
-
-    font-size:12px;
-    font-weight:800;
-    letter-spacing:1px;
-
-    background:rgba(255,255,255,0.04);
-
-    transition:0.35s;
-}
-
-.btn-top:hover{
-    background:#d4a017;
-    color:black;
-    box-shadow:0 10px 30px rgba(212,160,23,0.35);
-}
-
-/* HERO CONTENT */
-
-.hero-content{
-    min-height:100vh;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:160px 90px 120px;
-
-    gap:70px;
-
-    position:relative;
-    z-index:5;
-}
-
-/* LOGO */
-
-.logo-big{
-    width:45%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.logo-big img{
-    width:100%;
-    max-width:650px;
-
-    filter:drop-shadow(0 0 45px rgba(212,160,23,0.28));
-
-    animation:float 6s ease-in-out infinite;
-}
-
-@keyframes float{
-
-    0%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-12px);
-    }
-
-    100%{
-        transform:translateY(0);
-    }
-
-}
-
-/* TEXT */
-
-.text-side{
-    width:50%;
-}
-
-.subtitle{
-    font-size:18px;
-    color:#ffffff;
-    font-weight:700;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    line-height:1.8;
-}
-
-.description{
-    margin-top:30px;
-
-    font-size:18px;
-    color:#e9e9e9;
-
-    line-height:1.95;
-
-    max-width:720px;
-}
-
-/* BUTTONS */
-
-.buttons{
-    margin-top:48px;
-    display:flex;
-    gap:22px;
-}
-
-.btn-gold{
-    background:#d4a017;
-
-    color:black;
-    text-decoration:none;
-
-    padding:18px 42px;
-    border-radius:8px;
-
-    font-size:13px;
-    font-weight:800;
-    letter-spacing:1px;
-
-    transition:0.35s;
-}
-
-.btn-gold:hover{
-    transform:translateY(-5px);
-    box-shadow:0 12px 30px rgba(212,160,23,0.35);
-}
-
-.btn-dark{
-    border:2px solid #d4a017;
-
-    color:#d4a017;
-    text-decoration:none;
-
-    padding:16px 35px;
-    border-radius:8px;
-
-    font-size:13px;
-    font-weight:800;
-    letter-spacing:1px;
-
-    background:rgba(255,255,255,0.04);
-
-    transition:0.35s;
-}
-
-.btn-dark:hover{
-    background:rgba(212,160,23,0.10);
-}
-
-/* ABOUT */
-
-.about-section{
-    padding:120px 20px;
-    background:#151515;
-}
-
-.about-container{
-    max-width:1100px;
-    margin:auto;
-    text-align:center;
-}
-
-.about-container h2{
-    font-size:42px;
-    color:#d4a017;
-    margin-bottom:20px;
-}
-
-.about-container p{
-    color:#d6d6d6;
-    line-height:2;
-    font-size:17px;
-    max-width:950px;
-    margin:auto;
-}
-
-/* GOLD LINE */
-
-.gold-line{
-    width:120px;
-    height:2px;
-    background:#d4a017;
-    margin:30px auto 50px;
-}
-
-/* SERVICES */
-
-.services{
-    width:94%;
-    margin:auto;
-    margin-top:-80px;
-
-    position:relative;
-    z-index:20;
-
-    padding-bottom:90px;
-}
-
-.services-grid{
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-
-    background:rgba(15,15,15,0.95);
-
-    border:1px solid rgba(212,160,23,0.12);
-
-    border-radius:24px;
-
-    overflow:hidden;
-
-    backdrop-filter:blur(16px);
-
-    box-shadow:0 25px 60px rgba(0,0,0,0.45);
-}
-
-.service{
-    padding:45px 22px;
-
-    border-right:1px solid rgba(212,160,23,0.08);
-
-    text-align:center;
-
-    transition:0.35s;
-
-    opacity:0;
-    transform:translateY(40px);
-}
-
-.service.active{
-    opacity:1;
-    transform:translateY(0);
-}
-
-.service:hover{
-    background:#1a1a1a;
-    transform:translateY(-8px);
-}
-
-.service:last-child{
-    border-right:none;
-}
-
-.service-icon{
-    font-size:42px;
-    margin-bottom:20px;
-}
-
-.service h3{
-    margin-bottom:18px;
-    font-size:16px;
-    font-weight:800;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    color:#d4a017;
-}
-
-.service ul{
-    list-style:none;
-    text-align:left;
-    padding:0 10px;
-}
-
-.service ul li{
-    color:#d0d0d0;
-    font-size:13px;
-    line-height:1.7;
-    margin-bottom:8px;
-    padding-left:16px;
-    position:relative;
-}
-
-.service ul li::before{
-    content:'•';
-    color:#d4a017;
-    position:absolute;
-    left:0;
-}
-
-/* ENFOQUE */
-
-.focus-section{
-    padding:120px 20px;
-    background:#101010;
-}
-
-.focus-container{
-    max-width:1200px;
-    margin:auto;
-    text-align:center;
-}
-
-.focus-container h2{
-    font-size:42px;
-    color:#d4a017;
-}
-
-.focus-grid{
-    margin-top:60px;
-
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-}
-
-.focus-box{
-    background:#181818;
-
-    padding:45px 35px;
-
-    border-radius:20px;
-
-    border:1px solid rgba(212,160,23,0.10);
-
-    transition:0.35s;
-}
-
-.focus-box:hover{
-    transform:translateY(-10px);
-    background:#1f1f1f;
-}
-
-.focus-box h3{
-    color:#d4a017;
-    margin-bottom:18px;
-    font-size:20px;
-}
-
-.focus-box p{
-    color:#d0d0d0;
-    line-height:1.9;
-    font-size:15px;
-}
-
-/* FORMULARIO */
-
-.form-section{
-    padding:120px 20px;
-    background:#151515;
-}
-
-.form-container{
-    max-width:850px;
-    margin:auto;
-
-    background:#1a1a1a;
-
-    padding:60px;
-
-    border-radius:24px;
-
-    border:1px solid rgba(212,160,23,0.12);
-
-    box-shadow:0 25px 60px rgba(0,0,0,0.35);
-}
-
-.form-container h2{
-    text-align:center;
-    color:#d4a017;
-    font-size:40px;
-}
-
-.form-container p{
-    text-align:center;
-    color:#d0d0d0;
-    margin-top:20px;
-    margin-bottom:45px;
-    line-height:1.8;
-}
-
-.form-group{
-    margin-bottom:25px;
-}
-
-.form-group label{
-    display:block;
-    margin-bottom:12px;
-    color:#d4a017;
-    font-weight:700;
-}
-
-.form-group input,
-.form-group textarea,
-.form-group select{
-
-    width:100%;
-
-    padding:18px;
-
-    border:none;
-
-    border-radius:12px;
-
-    background:#111;
-
-    color:white;
-
-    font-size:15px;
-
-    outline:none;
-
-    border:1px solid rgba(212,160,23,0.15);
-}
-
-.form-group textarea{
-    min-height:140px;
-    resize:none;
-}
-
-.submit-btn{
-    width:100%;
-
-    background:#d4a017;
-
-    color:black;
-
-    border:none;
-
-    padding:20px;
-
-    border-radius:12px;
-
-    font-size:15px;
-    font-weight:800;
-
-    cursor:pointer;
-
-    transition:0.35s;
-}
-
-.submit-btn:hover{
-    transform:translateY(-4px);
-}
-
-/* FOOTER */
-
-.footer{
-    padding:90px 20px;
-    text-align:center;
-    background:#0c0c0c;
-    border-top:1px solid rgba(212,160,23,0.10);
-}
-
-.footer h2{
-    color:#d4a017;
-    margin-bottom:20px;
-    font-size:34px;
-}
-
-.footer p{
-    color:#d8d8d8;
-    line-height:1.9;
-}
-
-.footer-line{
-    width:120px;
-    height:2px;
-    background:#d4a017;
-    margin:30px auto;
-}
-
-.copy{
-    margin-top:28px;
-    font-size:13px;
-    opacity:0.7;
-}
-
-/* WHATSAPP */
-
-.whatsapp-float{
-    position:fixed;
-
-    bottom:28px;
-    right:28px;
-
-    width:65px;
-    height:65px;
-
-    background:#25D366;
-
-    border-radius:50%;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    font-size:30px;
-
-    color:white;
-    text-decoration:none;
-
-    z-index:999;
-
-    box-shadow:0 12px 30px rgba(0,0,0,0.35);
-
-    transition:0.35s;
-}
-
-.whatsapp-float:hover{
-    transform:scale(1.1);
-}
-
-/* RESPONSIVE */
-
-@media(max-width:1200px){
-
-.hero-content{
-    flex-direction:column;
-    text-align:center;
-}
-
-.logo-big,
-.text-side{
-    width:100%;
-}
-
-.buttons{
-    justify-content:center;
-}
-
-.services-grid{
-    grid-template-columns:repeat(2,1fr);
-}
-
-.focus-grid{
-    grid-template-columns:1fr;
-}
-
-nav{
-    display:none;
-}
-
-}
-
-@media(max-width:700px){
-
-header{
-    padding:20px;
-    justify-content:center;
-}
-
-.hero-content{
-    padding:140px 20px 100px;
-}
-
-.logo-big img{
-    max-width:400px;
-}
-
-.subtitle{
-    font-size:15px;
-}
-
-.description{
-    font-size:15px;
-}
-
-.buttons{
-    flex-direction:column;
-}
-
-.services-grid{
-    grid-template-columns:1fr;
-}
-
-.form-container{
-    padding:35px 25px;
-}
-
-.whatsapp-float{
-    width:58px;
-    height:58px;
-    font-size:26px;
-}
-
-}
+/* AQUÍ PEGAS TODO TU MISMO CSS ACTUAL SIN CAMBIAR */
 
 </style>
 </head>
@@ -734,22 +68,22 @@ SOLICITAR PROPUESTA
 <div class="hero-content">
 
 <div class="logo-big">
-<img src="logo.png" alt="IGPH Panamá">
+<img src="logo.png" alt="IGPH Panamá Administración de Propiedad Horizontal en Panamá">
 </div>
 
 <div class="text-side">
 
 <div class="subtitle">
-GESTIÓN INTELIGENTE • ADMINISTRACIÓN PREMIUM • SOLUCIONES CORPORATIVAS
+ADMINISTRACIÓN DE PROPIEDAD HORIZONTAL EN PANAMÁ • ADMINISTRACIÓN PH • GESTIÓN PROFESIONAL
 </div>
 
 <div class="description">
 
-Administración técnica, financiera y operativa para propiedades horizontales que exigen excelencia, control estratégico y valorización sostenible del activo inmobiliario.
+IGPH Panamá ofrece administración profesional de Propiedad Horizontal para edificios, residenciales, comunidades y PH en Panamá.
 
 <br><br>
 
-Especialistas en administración integral de PH, análisis de riesgos, reglamentos de uso, mantenimiento preventivo y optimización operativa para comunidades de alto nivel en Panamá.
+Brindamos gestión técnica, financiera y operativa, administración PH, análisis de riesgos, confección de reglamentos de uso, mantenimiento preventivo y optimización operativa para comunidades que buscan transparencia, orden y valorización de su propiedad.
 
 </div>
 
@@ -775,7 +109,7 @@ SABER MÁS
 
 <div class="about-container">
 
-<h2>Nosotros</h2>
+<h2>Administración Profesional de Propiedad Horizontal en Panamá</h2>
 
 <div class="gold-line"></div>
 
@@ -785,7 +119,7 @@ IGPH Panamá nace con una visión moderna de la administración de Propiedad Hor
 
 <br><br>
 
-Nuestro enfoque combina transparencia financiera, eficiencia operativa y mantenimiento inteligente para maximizar la valorización del activo inmobiliario y mejorar la calidad de vida de los residentes.
+Nuestro enfoque combina transparencia financiera, eficiencia operativa, mantenimiento inteligente, análisis de riesgos y cumplimiento normativo para maximizar la valorización del activo inmobiliario y mejorar la calidad de vida de los residentes.
 
 </p>
 
@@ -798,73 +132,53 @@ Nuestro enfoque combina transparencia financiera, eficiencia operativa y manteni
 <div class="services-grid">
 
 <div class="service">
-
 <div class="service-icon">⚙️</div>
-
-<h3>Gestión Técnica</h3>
-
+<h3>Gestión Técnica PH</h3>
 <ul>
 <li>Plan Maestro de Mantenimiento</li>
 <li>Auditoría Predictiva y Preventiva</li>
 <li>Supervisión de Activos Críticos</li>
 </ul>
-
 </div>
 
 <div class="service">
-
 <div class="service-icon">🏢</div>
-
-<h3>Adm. Integral</h3>
-
+<h3>Administración PH Integral</h3>
 <ul>
 <li>Gestión bajo Ley 284 de 2022</li>
 <li>Control Financiero Estratégico</li>
 <li>Gestión de Morosidad</li>
 </ul>
-
 </div>
 
 <div class="service">
-
 <div class="service-icon">📉</div>
-
-<h3>Eficiencia</h3>
-
+<h3>Optimización Operativa</h3>
 <ul>
-<li>Optimización Operativa</li>
 <li>Reducción de Costos</li>
 <li>Análisis Energético</li>
+<li>Mejora de Procesos</li>
 </ul>
-
 </div>
 
 <div class="service">
-
 <div class="service-icon">📜</div>
-
-<h3>Reglamentos</h3>
-
+<h3>Reglamentos de Uso PH</h3>
 <ul>
 <li>Reglamentos PH</li>
 <li>Normativas de Convivencia</li>
 <li>Procedimientos Internos</li>
 </ul>
-
 </div>
 
 <div class="service">
-
 <div class="service-icon">🛡️</div>
-
-<h3>Seguridad</h3>
-
+<h3>Análisis de Riesgos PH</h3>
 <ul>
 <li>Análisis de Riesgos</li>
 <li>Auditorías Técnicas</li>
 <li>Seguridad Integral</li>
 </ul>
-
 </div>
 
 </div>
@@ -875,40 +189,31 @@ Nuestro enfoque combina transparencia financiera, eficiencia operativa y manteni
 
 <div class="focus-container">
 
-<h2>Enfoque Estratégico</h2>
+<h2>Gestión Estratégica para Propiedades Horizontales</h2>
 
 <div class="gold-line"></div>
 
 <div class="focus-grid">
 
 <div class="focus-box">
-
 <h3>Optimización Operativa</h3>
-
 <p>
-Aplicamos metodologías de mejora continua para reducir costos y aumentar la eficiencia administrativa.
+Aplicamos metodologías de mejora continua para reducir costos y aumentar la eficiencia administrativa en propiedades horizontales.
 </p>
-
 </div>
 
 <div class="focus-box">
-
 <h3>Gestión Inteligente</h3>
-
 <p>
-Implementamos controles financieros y operativos con visión corporativa moderna.
+Implementamos controles financieros y operativos con visión corporativa moderna para edificios y PH en Panamá.
 </p>
-
 </div>
 
 <div class="focus-box">
-
 <h3>Valorización del Activo</h3>
-
 <p>
-La correcta administración incrementa el valor y la reputación de cada propiedad horizontal.
+Una correcta administración PH incrementa el valor, la reputación y la sostenibilidad de cada propiedad horizontal.
 </p>
-
 </div>
 
 </div>
@@ -917,121 +222,7 @@ La correcta administración incrementa el valor y la reputación de cada propied
 
 </section>
 
-<section id="formulario" class="form-section">
-
-<div class="form-container">
-
-<h2>Solicitar Propuesta</h2>
-
-<div class="gold-line"></div>
-
-<p>
-Complete el siguiente formulario y nuestro equipo le contactará para preparar una propuesta personalizada para su propiedad horizontal.
-</p>
-
-<form>
-
-<div class="form-group">
-<label>Nombre del Edificio o PH</label>
-<input type="text" placeholder="Ejemplo: PH Costa Bella">
-</div>
-
-<div class="form-group">
-<label>Nombre del Contacto</label>
-<input type="text" placeholder="Nombre completo">
-</div>
-
-<div class="form-group">
-<label>Número de Contacto</label>
-<input type="tel" placeholder="+507">
-</div>
-
-<div class="form-group">
-<label>Correo Electrónico</label>
-<input type="email" placeholder="correo@ejemplo.com">
-</div>
-
-<div class="form-group">
-<label>Cantidad de Apartamentos</label>
-<input type="number" placeholder="Ejemplo: 56">
-</div>
-
-<div class="form-group">
-<label>Servicios Requeridos</label>
-
-<select>
-<option>Administración Integral</option>
-<option>Reglamento PH</option>
-<option>Auditoría Operativa</option>
-<option>Mantenimiento</option>
-<option>Consultoría Estratégica</option>
-</select>
-
-</div>
-
-<div class="form-group">
-<label>Detalles Adicionales</label>
-
-<textarea placeholder="Escriba detalles importantes sobre la propiedad o necesidades específicas"></textarea>
-
-</div>
-
-<button type="submit" class="submit-btn">
-ENVIAR SOLICITUD
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-<section class="footer" id="contacto">
-
-<h2>IGPH Panamá</h2>
-
-<div class="footer-line"></div>
-
-<p>
-Administración Inteligente de Propiedad Horizontal<br>
-Panamá, República de Panamá
-</p>
-
-<br>
-
-<p>
-📞 +507 6428-8858<br>
-✉ contacto@igphpanama.com
-</p>
-
-<div class="copy">
-© 2026 IGPH Panamá™ · Todos los derechos reservados
-</div>
-
-</section>
-
-<script>
-
-const reveals = document.querySelectorAll('.service');
-
-window.addEventListener('scroll', () => {
-
-    reveals.forEach(reveal => {
-
-        const windowHeight = window.innerHeight;
-        const revealTop = reveal.getBoundingClientRect().top;
-        const revealPoint = 120;
-
-        if(revealTop < windowHeight - revealPoint){
-            reveal.classList.add('active');
-        }
-
-    });
-
-});
-
-</script>
+<!-- EL RESTO DEL FORMULARIO, FOOTER Y SCRIPT QUEDA IGUAL -->
 
 </body>
-</html>
 </html>
